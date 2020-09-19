@@ -1,10 +1,10 @@
-package com.codechallenge.road.city.connect;
+package com.codechallenge.connectedcities;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ConnectApplicationTests {
+class ConnectedCitiesApplicationTests {
 
 	@Test
 	void contextLoads() {
