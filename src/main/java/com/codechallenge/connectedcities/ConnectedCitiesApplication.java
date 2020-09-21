@@ -17,6 +17,10 @@ public class ConnectedCitiesApplication {
 		SpringApplication.run(ConnectedCitiesApplication.class, args);
 	}
 
+	/**
+	 * @implNotw Add Swagger
+	 * @return
+	 */
 	@Bean
 	   public Docket productApi() {
 	      return new Docket(DocumentationType.SWAGGER_2).select()

@@ -17,9 +17,10 @@ public class ConnectedCitiesServiceImpl implements ConnectedCitiesService {
 
 	/**
 	 * @see com.codechallenge.connectedcities.service.ConnectedCitiesService#areCitiesConnected()
+	 * @implNote Method is responsible check route is available or Not between cities.
 	 */
 	@Override
 	public String areCitiesConnected(String origin, String destination) {
-		return connectedCitiesDataLoader.IsConnected(origin.trim().toLowerCase(), destination.trim().toLowerCase());
+		return connectedCitiesDataLoader.isRouteConnected(origin.trim().toLowerCase(), destination.trim().toLowerCase());
 	}
 }

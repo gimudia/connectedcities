@@ -32,14 +32,14 @@ public class ConnectedCitiesServiceImplTest {
 	 */
 	@Test
 	public void Given_ServiceUp_When_OriginAndDestinationCitiesAreConnected_Then_ReturnYES() {
-		when(connectedCitiesDataLoader.IsConnected("boston", "new york")).thenReturn("Yes");
+		when(connectedCitiesDataLoader.isRouteConnected("boston", "new york")).thenReturn("Yes");
 		String isConnected = connectedCitiesService.areCitiesConnected("Boston", "New York");
 		assertEquals("Yes",isConnected);
 	}
 	
 	@Test
 	public void Given_ServiceUp_When_OriginAndDestinationCitiesAreConnected_Then_ReturnNo() {
-		when(connectedCitiesDataLoader.IsConnected("boston", "new york")).thenReturn("No");
+		when(connectedCitiesDataLoader.isRouteConnected("boston", "new york")).thenReturn("No");
 		String isConnected = connectedCitiesService.areCitiesConnected("Boston", "New York");
 		assertEquals("No",isConnected);
 	}
